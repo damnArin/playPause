@@ -1,0 +1,21 @@
+    <audio controls>
+
+      <source src="http://tx.sharp-stream.com/http_live.php?i=jazzfmmobile.aac&device=rpweb" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <div id="hideme">
+    <audio id="audioTag" controls>
+        <source src="flamingos.mp3">
+    </audio>
+    </div>
+    
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        var audioEl = document.getElementById("audioTag");
+        audioEl.load();
+        audioEl.play();
+      };
+    </script>
